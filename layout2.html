@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>layout2</title>
+        <style>
+            #first_h1{
+                color: white;
+            }
+            #last_h1{
+                color: #cfc91d;
+            }
+            header{
+                background-color: #02918c;
+                color: white;
+            }
+            header h1{
+                margin-top: 3px;
+                margin-bottom: 3px;
+            }
+            header ul{
+                list-style: none;
+            }
+            header ul li{
+                float: left;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .clear{
+                clear: both;
+            }
+            .float_object_left{
+                float: left;
+            }
+            .float_object_right{
+                float: right;
+            }
+            #main_visual{
+                background-image: url("./image/layout2_visual.jpg");
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position: 50% 50%;
+                background-size: cover;
+                color: white;
+                text-align: center;
+                padding-top: 150px;
+                padding-bottom: 150px;
+            }
+            #visual_top{
+                font-size: 30px;
+            }
+            #visual_bottom{
+                font-size: 20px;
+            }
+            #main_visual>h2{
+                font-size: 80px;
+                margin: 0px;
+                letter-spacing: 20px;
+            }
+            #main_visual>img{
+                margin-top: 100px;
+            }
+            section{
+                text-align: center;
+            }
+            section>h2{
+                color: #02918c;
+                font-size: 40px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            section>ul{
+                list-style: none;
+                padding: 0px;
+            }
+            #about_me>ul>li{
+                float: left;
+                width: calc(25% - 81px);
+                border-right: solid 1px lightgray;
+                padding: 40px;
+            }
+            #about_me>ul>li:nth-child(4){
+                border: none;
+            }
+            #my_work>ul>li{
+                float: left;
+                width: 25%;
+            }
+            #my_work>ul>li>img{
+                width: 100%;
+                display: block;
+            }
+            section dt{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            section dd{
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_object_left">
+                    <span id="first_h1">MY</span><span id="last_h1">FOLIO</span>
+                </h1>
+                <nav class="float_object_right">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>SERVICE</li>
+                        <li>MY WORK</li>
+                        <li>CONTACT ME</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div id="visual_top">Lorem ipsum dolor sit iusmod tempor</div>
+                <h2>incididunt bore</h2>
+                <div id="visual_bottom">Orem ipsum dolor sit amet, consectetur</div>
+                <img src="./image/layout2_button.jpg" title="know more" alt="know more">
+            </div>
+            <section id="about_me">
+                <h2>ABOUT ME</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                     sed do eiusmod tempor incididunt ut labore et <br /> dolore magna 
+                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                     ullamco laboris nisi ut aliquip ex ea <br /> commodo consequat 
+                     duis aute irure dolor.
+                </p>
+                <ul>
+                    <li>
+                        <img src="./image/layout2_icon1.jpg" title="about_me_icon1" alt="about_me_icon1" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod tempor 
+                                incidi et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="./image/layout2_icon2.jpg" title="about_me_icon2" alt="about_me_icon2" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod tempor 
+                                incidi et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="./image/layout2_icon3.jpg" title="about_me_icon3" alt="about_me_icon3" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod tempor 
+                                incidi et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="./image/layout2_icon4.jpg" title="about_me_icon4" alt="about_me_icon4" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod tempor 
+                                incidi et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <section id="my_work">
+                <h2>MY WORK</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul>
+                    <li><img src="./image/layout2_pic1.jpg" title="work1" alt="work1"></li>
+                    <li><img src="./image/layout2_pic2.jpg" title="work2" alt="work2"></li>
+                    <li><img src="./image/layout2_pic3.jpg" title="work3" alt="work3"></li>
+                    <li><img src="./image/layout2_pic4.jpg" title="work4" alt="work4"></li>
+                    <li><img src="./image/layout2_pic5.jpg" title="work5" alt="work5"></li>
+                    <li><img src="./image/layout2_pic6.jpg" title="work6" alt="work6"></li>
+                    <li><img src="./image/layout2_pic7.jpg" title="work7" alt="work7"></li>
+                    <li><img src="./image/layout2_pic8.jpg" title="work8" alt="work8"></li>
+                </ul>
+            </section>
+        </div>
+    </body>
+</html>
